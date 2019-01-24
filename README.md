@@ -18,8 +18,6 @@ It's important to mention that you have access to [Kubernetes Oficial Documentat
 
 For information about the exam, please refer [Certified Kubernetes Administrator (CKA) Program](https://www.cncf.io/certification/cka/).
 
-___
-
 # CKA Curriculum
 
 Exam objectives that outline of the knowledge, skills and abilities that a Certified Kubernetes Administrator (CKA) can be expected to demonstrate.
@@ -64,13 +62,13 @@ Exam objectives that outline of the knowledge, skills and abilities that a Certi
         kubectl get deployments
 
         # Update Deployment
-        $ kubectl edit deployment.v1.apps/nginx-deployment
+        kubectl edit deployment.v1.apps/nginx-deployment
 
         # See rollout status
         kubectl rollout status deployment.v1.apps/nginx-deployment
 
         # Describe Deployment
-        $ kubectl describe deployment
+        kubectl describe deployment
 
         # Rolling back to a previous revision
         kubectl rollout undo deployment.v1.apps/nginx-deployment
@@ -85,10 +83,10 @@ Exam objectives that outline of the knowledge, skills and abilities that a Certi
 
         ```bash
         # Increase replicas number for nginx-deployment
-        $ kubectl scale deployment/nginx-deployment --replicas=5
+        kubectl scale deployment/nginx-deployment --replicas=5
 
         # Using autoscaling
-        $ kubectl autoscale deployment/ginx-deployment --min=2 --max=5
+        kubectl autoscale deployment/nginx-deployment --min=2 --max=5
         ```
 
 - Understand the primitives necessary to create a self-healing application.
@@ -100,16 +98,76 @@ Exam objectives that outline of the knowledge, skills and abilities that a Certi
 ## Installation, Configuration & Validation 12%
 
 - Design a Kubernetes cluster.
+
+    - [Concepts: Cluster Administration: Overview: Planning a Cluster](https://v1-12.docs.kubernetes.io/docs/concepts/cluster-administration/cluster-administration-overview/#planning-a-cluster)
+
 - Install Kubernetes masters and nodes.
+
+    - [Setup: Creating a Custom Cluster from Scratch](https://v1-12.docs.kubernetes.io/docs/setup/scratch/)
+
 - Configure secure cluster communications.
+
+    - [Tasks: TLS: Manage TLS Certificates in a Cluster](https://v1-12.docs.kubernetes.io/docs/tasks/tls/managing-tls-in-a-cluster/)
+
 - Configure a Highly-Available Kubernetes cluster.
+
+    - [Setup: Bootstrapping Clusters with kubeadm: Creating Highly Available Clusters with kubeadm](https://v1-12.docs.kubernetes.io/docs/setup/independent/high-availability/)
+
 - Know where to get the Kubernetes release binaries.
+
+    - [Setup: Downloading Kubernetes: Bulding from Source](https://v1-12.docs.kubernetes.io/docs/setup/release/building-from-source/)
+
 - Provision underlying infrastructure to deploy a Kubernetes cluster.
+
+    - [Setup: Picking the Right Solution](https://v1-12.docs.kubernetes.io/docs/setup/pick-right-solution/)
+
 - Choose a network solution.
+
+    - [Setup: Creating a Custom Cluster from Scratch: #Network](https://v1-12.docs.kubernetes.io/docs/setup/scratch/#network)
+
 - Choose your Kubernetes infrastructure configuration.
+
+    - [Setup: Creating a Custom Cluster from Scratch: #Nodes](https://v1-12.docs.kubernetes.io/docs/setup/scratch/#nodes)
+    - [Setup: Building Large Clusters](https://v1-12.docs.kubernetes.io/docs/setup/cluster-large/)
+
 - Run end-to-end tests on your cluster.
+
+    - [Reference: Kubectl Commands: Cluster Management](https://v1-12.docs.kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#-strong-cluster-management-strong-)
+
+    - [Extra: End-to-End Testing in Kubernetes](https://github.com/kubernetes/community/blob/master/contributors/devel/e2e-tests.md)
+
 - Analyse end-to-end tests results.
+
+    - [Extra: Kubetest](https://github.com/kubernetes/test-infra/tree/master/kubetest)
+
 - Run Node end-to-end tests.
+
+    - [Node End-To-End tests](https://github.com/kubernetes/community/blob/master/contributors/devel/e2e-node-tests.md)
+
+```bash
+# Kucebtl Cheatsheet commands to end-to-end tests
+
+# Display addresses of the master and services
+kubectl cluster-info
+
+# Dump current cluster state to stdout
+kubectl cluster-info dump
+
+# Check health of cluster components
+kubectl get componentstatuses
+
+# List the nodes
+kubectl get nodes
+
+# Show metrics for a given node
+kubectl top node my-node
+
+# List all pods in all namespaces, with more details
+kubectl get pods -o wide --all-namespaces
+
+# List all services in all namespaces, with more details
+kubectl get svc  -o wide --all-namespaces
+```
 
 ## Core Concepts 19%
 
@@ -172,7 +230,6 @@ Exam objectives that outline of the knowledge, skills and abilities that a Certi
 - Manage cluster component logs.
 - Manage application logs.
 
-
 ## Storage 7%
 
 - Understand persistent volumes and know how to create them.
@@ -181,15 +238,12 @@ Exam objectives that outline of the knowledge, skills and abilities that a Certi
 - Understand Kubernetes storage objects.
 - Know how to configure applications with persistent storage.
 
-
 ## Troubleshooting 10%
 
 - Troubleshoot application failure.
 - Troubleshoot control plane failure.
 - Troubleshoot worker node failure.
 - Troubleshoot networking.
-
-___
 
 # CKA Preparation Courses
 
@@ -199,6 +253,4 @@ ___
 
 - [Kubernetes Deep Dive - A Cloud Guru](https://acloud.guru/learn/kubernetes-deep-dive)
 
-___
-
-# Tips 
+# Tips
