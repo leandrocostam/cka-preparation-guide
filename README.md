@@ -232,9 +232,34 @@ kubectl get svc  -o wide --all-namespaces
 ## Logging / Monitoring 5%
 
 - Understand how to monitor all cluster components.
+
+    - [Tasks: Monitor, Log, and Debug: Tools for Monitoring Resources](https://kubernetes.io/docs/tasks/debug-application-cluster/resource-usage-monitoring/)
+
 - Understand how to monitor applications.
+
+    - [Tasks: Monitor, Log, and Debug: Application Introspection and Debugging](https://v1-12.docs.kubernetes.io/docs/tasks/debug-application-cluster/debug-application-introspection/)
+
 - Manage cluster component logs.
+
+    - [Tasks: Monitor, Log, and Debug: Troubleshoot Clusters](https://v1-12.docs.kubernetes.io/docs/tasks/debug-application-cluster/debug-cluster/)
+
+        - Master Log Files
+        ```
+        /var/log/kube-apiserver.log - API Server, responsible for serving the API
+        /var/log/kube-scheduler.log - Scheduler, responsible for making scheduling decisions
+        /var/log/kube-controller-manager.log - Controller that manages replication controllers
+        ```
+
+         - Worker Nodes Log Files
+        ```
+        /var/log/kubelet.log - Kubelet, responsible for running containers on the node
+        /var/log/kube-proxy.log - Kube Proxy, responsible for service load balancing
+        ```
+
 - Manage application logs.
+
+    - [Tasks: Monitor, Log, and Debug: Troubleshoot Applications](https://v1-12.docs.kubernetes.io/docs/tasks/debug-application-cluster/debug-application/)
+
 
 ## Storage 7%
 
