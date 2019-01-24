@@ -220,8 +220,14 @@ kubectl get svc  -o wide --all-namespaces
 ## Cluster (Maintenance) 11%
 
 - Understand Kubernetes cluster upgrade process.
+
+    - [Tasks: Administration with kubeadm: Upgrading kubeadm clusters from v1.11 to v1.12](https://v1-12.docs.kubernetes.io/docs/tasks/administer-cluster/kubeadm/kubeadm-upgrade-1-12/)
+    - [Tasks: Administration with kubeadm: Upgrading kubeadm HA clusters from v1.11 to v1.12](https://v1-12.docs.kubernetes.io/docs/tasks/administer-cluster/kubeadm/kubeadm-upgrade-ha-1-12/)
+
 - Facilitate operating system upgrades.
 - Implement backup and restore methodologies.
+
+    - [Tasks: Administer a Cluster: Operating etcd clusters for Kubernetes](https://v1-12.docs.kubernetes.io/docs/tasks/administer-cluster/configure-upgrade-etcd/)
 
 ## Logging / Monitoring 5%
 
@@ -253,4 +259,37 @@ kubectl get svc  -o wide --all-namespaces
 
 - [Kubernetes Deep Dive - A Cloud Guru](https://acloud.guru/learn/kubernetes-deep-dive)
 
-# Tips
+# kubectl Ninja
+
+Tip: Use [kubectl Cheatsheet](https://v1-12.docs.kubernetes.io/docs/reference/kubectl/cheatsheet/) during the exam. You don't need to decorate everything.
+
+#### Useful commands or parameters during the exam:
+
+```bash
+# Use "kubectl describe" for related events and troubleshooting
+kubectl describe pods <podid>
+
+# Use "kubectl explain" to check the structure of a resource object.
+kubectl explain deployment --recursive
+
+## Add "-o wide" in order to use wide output, which gives you more details.
+kubectl get pods -o wide
+
+## Check always all namespaces by including "--all-namespaces"
+kubectl get pods --all-namespaces
+```
+
+Generate a manifest template from imperative spec using the output option "-o yaml" and the parameter "--dry-run":
+
+```shell
+kubectl create service clusterip my-service --tcp=8080 --dry-run -o yaml
+```
+
+Create resources using kubectl + stdin instead of creating them from manifest files. It helps a lot and saves time. You can use the output of the command above and modify as required:
+
+```shell
+cat <<EOF | kubectl create -f -
+...
+EOF  
+```
+It saves lots of time, believe me.
