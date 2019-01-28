@@ -264,16 +264,42 @@ kubectl get svc  -o wide --all-namespaces
 ## Storage 7%
 
 - Understand persistent volumes and know how to create them.
+
+    - [Concepts: Storage: Persistent Volumes](https://v1-12.docs.kubernetes.io/docs/concepts/storage/persistent-volumes/)
+
 - Understand access modes for volumes.
+
+    - [Concepts: Storage: Persistent Volumes: #Access Modes](https://v1-12.docs.kubernetes.io/docs/concepts/storage/persistent-volumes/#access-modes)
+
 - Understand persistent volume claims primitive.
+
+    - [Concepts: Storage: Persistent Volumes: #PersistentVolumeClaims](https://v1-12.docs.kubernetes.io/docs/concepts/storage/persistent-volumes/#persistentvolumeclaims)
+
 - Understand Kubernetes storage objects.
+
+    - [Concepts: Storage: Volumes](https://v1-12.docs.kubernetes.io/docs/concepts/storage/volumes)
+
 - Know how to configure applications with persistent storage.
+
+    - [Concepts: Storage: Volumes: #local](https://v1-12.docs.kubernetes.io/docs/concepts/storage/volumes/#local)
+    - [Concepts: Storage: Volumes: #hostPath](https://v1-12.docs.kubernetes.io/docs/concepts/storage/volumes/#hostpath)
 
 ## Troubleshooting 10%
 
 - Troubleshoot application failure.
+
+
+    - [Tasks: Monitor, Log, and Debug: Troubleshoot Applications](https://v1-12.docs.kubernetes.io/docs/tasks/debug-application-cluster/debug-application/)
+    - [Tasks: Monitor, Log, and Debug: Determine the Reason for Pod Failure](https://v1-12.docs.kubernetes.io/docs/tasks/debug-application-cluster/determine-reason-pod-failure/)
+
 - Troubleshoot control plane failure.
+
+    - [Tasks: Monitor, Log, and Debug: Troubleshoot Clusters](https://v1-12.docs.kubernetes.io/docs/tasks/debug-application-cluster/debug-cluster/)
+
 - Troubleshoot worker node failure.
+
+    - [Tasks: Monitor, Log, and Debug: Troubleshoot Clusters: #Worker Nodes](https://v1-12.docs.kubernetes.io/docs/tasks/debug-application-cluster/debug-cluster/#worker-nodes)
+
 - Troubleshoot networking.
 
 # CKA Preparation Courses
@@ -318,3 +344,4 @@ cat <<EOF | kubectl create -f -
 EOF  
 ```
 It saves lots of time, believe me.
+
