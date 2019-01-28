@@ -345,3 +345,7 @@ EOF
 ```
 It saves lots of time, believe me.
 
+#### CKA Tips
+
+- [Graham Moore - 7.5 tips to help you ace the Certified Kubernetes Administrator (CKA) exam](https://kubedex.com/7-5-tips-to-help-you-ace-the-certified-kubernetes-administrator-cka-exam/)
+
