@@ -1,7 +1,7 @@
 ---
 name: Add or Modify Content for CKA Exam
 about: Please, describe what you want to add or modify.
-title: "[CKA Content]"
+title: "[CKA Content] - <Issue Title>"
 labels: ''
 assignees: leandrocostam
 
