@@ -259,12 +259,35 @@ kubectl get svc  -o wide --all-namespaces
 ## Security 12%
 
 - Know how to configure authentication and authorization.
+
+    - [Tasks: Administer a Cluster: Securing a Cluster](https://v1-12.docs.kubernetes.io/docs/tasks/administer-cluster/securing-a-cluster/)
+
 - Understand Kubernetes security primitives.
+
+    - [Reference: Accessing the API: Authorization Overview](https://v1-12.docs.kubernetes.io/docs/reference/access-authn-authz/authorization/)
+        - Check all sub resources (Node Authorization, ABAC, RBAC, and Webhook)
+
 - Know to configure network policies.
+
+    - [Tasks: Administer a Cluster: Declare Network Policy](https://v1-12.docs.kubernetes.io/docs/tasks/administer-cluster/declare-network-policy/)
+
 - Create and manage TLS certificates for cluster components.
+
+    - [Tasks: TLS: Manage TLS Certificates in a Cluster](https://v1-12.docs.kubernetes.io/docs/tasks/tls/managing-tls-in-a-cluster/)
+
 - Work with images securely.
+
+    - [Concepts: Containers: Images](https://v1-12.docs.kubernetes.io/docs/concepts/containers/images/)
+
+    - [Concepts: Configuration: Best Practices: #Container Images](https://v1-12.docs.kubernetes.io/docs/concepts/configuration/overview/#container-images)
+
 - Define security contexts.
+
+    - [Tasks: Configure Pods and Containers: Configure a Security Context for a Pod or Container](https://v1-12.docs.kubernetes.io/docs/tasks/configure-pod-container/security-context/)
+
 - Secure persistent key value store.
+
+    - [Concepts: Configuration: Secrets](https://v1-12.docs.kubernetes.io/docs/concepts/configuration/secret/)
 
 ## Cluster (Maintenance) 11%
 
@@ -399,4 +422,3 @@ It saves lots of time, believe me.
 Some links that contain tips that might help you from different pespectives of the CKA exam. 
 
 - [Graham Moore - 7.5 tips to help you ace the Certified Kubernetes Administrator (CKA) exam](https://kubedex.com/7-5-tips-to-help-you-ace-the-certified-kubernetes-administrator-cka-exam/)
-
