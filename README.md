@@ -1,6 +1,6 @@
 # Certified Kubernetes Administrator (CKA) - V1.12.0
 
-The objective of this repository is help you for taking the Certified Kubernetes Administrator (CKA) exam using online resources, especially using resources from the [Kubernetes Oficial Documentation](https://kubernetes.io).
+The objective of this repository is help you for taking the Certified Kubernetes Administrator (CKA) exam using online resources, especially using resources from [Kubernetes Official Documentation](https://kubernetes.io).
 
 The references were selected for the Exam Curriculum 1.12.0, which uses the Kubernetes 1.12 version, and there are exclusive information for API objects and annotations. For more information, please see [CKA Curriculum 1.12.0](https://github.com/cncf/curriculum/blob/master/CKA_Curriculum_V1.12.0.pdf).
 
