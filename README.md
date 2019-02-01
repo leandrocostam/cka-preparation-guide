@@ -190,22 +190,71 @@ kubectl get svc  -o wide --all-namespaces
 ## Networking 11%
 
 - Understand the networking configuration on the cluster nodes.
+
+    - [Concepts: Cluster Administration: Cluster Networking](https://v1-12.docs.kubernetes.io/docs/concepts/cluster-administration/networking/)
+
 - Understand Pod networking concepts.
+
+    - [Kubernetes Project: Design Proposals - Network](https://github.com/kubernetes/community/blob/master/contributors/design-proposals/network/networking.md)
+
 - Understand service networking.
+
+    - [Concepts: Services, Load Balancing, and Networking: Services](https://v1-12.docs.kubernetes.io/docs/concepts/services-networking/service/)
+
 - Deploy and configure network load balancer.
+
+    - [Tasks: Access Applications in a Cluster: Create an External Load Balancer](https://v1-12.docs.kubernetes.io/docs/tasks/access-application-cluster/create-external-load-balancer/)
+
 - Know how to use Ingress rules.
+
+    - [Concepts: Services, Load Balancing, and Networking: Ingress](https://v1-12.docs.kubernetes.io/docs/concepts/services-networking/ingress/)
+
 - Know how to configure and use the cluster DNS.
+
+    - [Concepts: Services, Load Balancing, and Networking: DNS for Services and Pods](https://v1-12.docs.kubernetes.io/docs/concepts/services-networking/dns-pod-service/)
+
 - Understand CNI.
+
+    - [Concepts: Extending Kubernetes: Compute, Storage, and Networking Extensions: Network Plugins](https://v1-12.docs.kubernetes.io/docs/concepts/extend-kubernetes/compute-storage-net/network-plugins/)
 
 ## Scheduling 5%
 
 - Use label selectors to schedule Pods.
+
+    - [Concepts: Overview: Working with Kubernetes Objects: Labels and Selectors](https://v1-12.docs.kubernetes.io/docs/concepts/overview/working-with-objects/labels/)
+
 - Understand the role of DaemonSets.
+
+    - [Concepts: Workloads: Controllers: DaemonSet](https://v1-12.docs.kubernetes.io/docs/concepts/workloads/controllers/daemonset/)
+
 - Understand how resource limits can affect Podscheduling.
+
+    - [Tasks: Administer a Cluster: Manage Memory, CPU, and API Resources: Configure Default Memory Requests and Limits for a Namespace](https://v1-12.docs.kubernetes.io/docs/tasks/administer-cluster/manage-resources/memory-default-namespace/)
+    - [Tasks: Administer a Cluster: Manage Memory, CPU, and API Resources: Configure Default CPU Requests and Limits for a Namespace](https://v1-12.docs.kubernetes.io/docs/tasks/administer-cluster/manage-resources/cpu-default-namespace/)
+
 - Understand how to run multiple schedulers and how to configure Pods to use them.
+
+    - [Tasks: Administer a Cluster: Configure Multiple Schedulers](https://v1-12.docs.kubernetes.io/docs/tasks/administer-cluster/configure-multiple-schedulers/)
+
 - Manually schedule a pod without a scheduler.
+
+    - [Tasks: Administer a Cluster: Static Pods](https://v1-12.docs.kubernetes.io/docs/tasks/administer-cluster/static-pod/)
+
 - Dispaly scheduler events.
+
+    - [Tasks: Administer a Cluster: Configure Multiple Schedulers: #Verifying that the pods were scheduled using the desired schedulers](https://v1-12.docs.kubernetes.io/docs/tasks/administer-cluster/configure-multiple-schedulers/#verifying-that-the-pods-were-scheduled-using-the-desired-schedulers)
+
+        ```bash
+        $ kubectl get events
+        # or
+        $ kubectl describe pods | grep -A7 ^Events
+
+        # Master/Control node 
+        $ tail /var/log/kube-scheduler.log
+        ```
 - Know how to configure the Kubernetes scheduler.
+
+    - [Tasks: Administer a Cluster: Configure Multiple Schedulers](https://v1-12.docs.kubernetes.io/docs/tasks/administer-cluster/configure-multiple-schedulers/)
 
 ## Security 12%
 
@@ -347,7 +396,7 @@ It saves lots of time, believe me.
 
 # CKA Tips
 
-Some helpful links that contain tips that might help you from different pespectives of the CKA exam. 
+Some links that contain tips that might help you from different pespectives of the CKA exam. 
 
 - [Graham Moore - 7.5 tips to help you ace the Certified Kubernetes Administrator (CKA) exam](https://kubedex.com/7-5-tips-to-help-you-ace-the-certified-kubernetes-administrator-cka-exam/)
 
