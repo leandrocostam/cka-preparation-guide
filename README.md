@@ -417,6 +417,11 @@ EOF
 ```
 It saves lots of time, believe me.
 
+Kubectl Autocomplete
+```shell 
+source <(kubectl completion bash)
+```
+
 # CKA Tips
 
 Some links that contain tips that might help you from different pespectives of the CKA exam. 
