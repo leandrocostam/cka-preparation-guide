@@ -405,7 +405,14 @@ kubectl get pods --all-namespaces
 Generate a manifest template from imperative spec using the output option "-o yaml" and the parameter "--dry-run":
 
 ```shell
+# create a service
 kubectl create service clusterip my-service --tcp=8080 --dry-run -o yaml
+
+# create a deployment
+kubectl run nginx --image=nginx --dry-run -o yaml
+
+# create a pod
+kubectl run nginx --image=nginx --restart=Never --dry-run -o yaml
 ```
 
 Create resources using kubectl + stdin instead of creating them from manifest files. It helps a lot and saves time. You can use the output of the command above and modify as required:
