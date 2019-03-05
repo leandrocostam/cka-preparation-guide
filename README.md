@@ -192,6 +192,7 @@ kubectl get svc  -o wide --all-namespaces
 - Understand the networking configuration on the cluster nodes.
 
     - [Concepts: Cluster Administration: Cluster Networking](https://v1-12.docs.kubernetes.io/docs/concepts/cluster-administration/networking/)
+    - [Extra: Kubernetes Networking Explained: Introduction](https://supergiant.io/blog/kubernetes-networking-explained-introduction)
 
 - Understand Pod networking concepts.
 
