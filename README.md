@@ -103,7 +103,7 @@ Exam objectives that outline of the knowledge, skills and abilities that a Certi
 
 - Install Kubernetes masters and nodes.
 
-    - [Setup: Creating a Custom Cluster from Scratch](https://v1-13.docs.kubernetes.io/docs/setup/scratch/)
+    - [Setup: Bootstrapping Clusters with kubeadm: Creating a single master cluster with kubeadm](https://v1-13.docs.kubernetes.io/docs/setup/independent/create-cluster-kubeadm/)
 
 - Configure secure cluster communications.
 
@@ -123,11 +123,10 @@ Exam objectives that outline of the knowledge, skills and abilities that a Certi
 
 - Choose a network solution.
 
-    - [Setup: Creating a Custom Cluster from Scratch: #Network](https://v1-13.docs.kubernetes.io/docs/setup/scratch/#network)
+    - [Setup: Bootstrapping Clusters with kubeadm: Creating a single master cluster with kubeadm: #Installing a pod network add-on](https://v1-13.docs.kubernetes.io/docs/setup/independent/create-cluster-kubeadm/#pod-network)
 
 - Choose your Kubernetes infrastructure configuration.
 
-    - [Setup: Creating a Custom Cluster from Scratch: #Nodes](https://v1-13.docs.kubernetes.io/docs/setup/scratch/#nodes)
     - [Setup: Building Large Clusters](https://v1-13.docs.kubernetes.io/docs/setup/cluster-large/)
 
 - Run end-to-end tests on your cluster.
@@ -294,8 +293,8 @@ kubectl get svc  -o wide --all-namespaces
 
 - Understand Kubernetes cluster upgrade process.
 
-    - [Tasks: Administration with kubeadm: Upgrading kubeadm clusters from v1.11 to v1.12](https://v1-13.docs.kubernetes.io/docs/tasks/administer-cluster/kubeadm/kubeadm-upgrade-1-12/)
-    - [Tasks: Administration with kubeadm: Upgrading kubeadm HA clusters from v1.11 to v1.12](https://v1-13.docs.kubernetes.io/docs/tasks/administer-cluster/kubeadm/kubeadm-upgrade-ha-1-12/)
+    - [Tasks: Administration with kubeadm: Upgrading kubeadm clusters from v1.12 to v1.13](https://v1-13.docs.kubernetes.io/docs/tasks/administer-cluster/kubeadm/kubeadm-upgrade-1-13/)
+    - [Tasks: Administration with kubeadm: Upgrading kubeadm HA clusters from v1.12 to v1.13](https://v1-13.docs.kubernetes.io/docs/tasks/administer-cluster/kubeadm/kubeadm-upgrade-ha-1-13/)
 
 - Facilitate operating system upgrades.
 - Implement backup and restore methodologies.
