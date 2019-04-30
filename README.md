@@ -26,7 +26,7 @@ Exam objectives that outline of the knowledge, skills and abilities that a Certi
 
 - Understand Deployments and how to perform rolling updates and rollbacks.
 
-    - [Concepts: Workloads: Controllers: Deployment](https://v1-13.docs.kubernetes.io/docs/concepts/workloads/controllers/deployment/)
+    - [Concepts: Workloads: Controllers: Deployment](https://v1-14.docs.kubernetes.io/docs/concepts/workloads/controllers/deployment/)
 
     - Example Deployment File (dep-nginx.yaml) using NGINX 
 
@@ -75,11 +75,11 @@ Exam objectives that outline of the knowledge, skills and abilities that a Certi
 
 - Know various ways to configure applications.
 
-    - [Concepts: Cluster Administration: Managing Resources](https://v1-13.docs.kubernetes.io/docs/concepts/cluster-administration/manage-deployment/)
+    - [Concepts: Cluster Administration: Managing Resources](https://v1-14.docs.kubernetes.io/docs/concepts/cluster-administration/manage-deployment/)
 
 - Know how to scale applications.
 
-    - [Concepts: Cluster Administration: Managing Resources: #Scaling Your Application](https://v1-13.docs.kubernetes.io/docs/concepts/cluster-administration/manage-deployment/#scaling-your-application).
+    - [Concepts: Cluster Administration: Managing Resources: #Scaling Your Application](https://v1-14.docs.kubernetes.io/docs/concepts/cluster-administration/manage-deployment/#scaling-your-application).
 
         ```bash
         # Increase replicas number for nginx-deployment
@@ -91,47 +91,47 @@ Exam objectives that outline of the knowledge, skills and abilities that a Certi
 
 - Understand the primitives necessary to create a self-healing application.
 
-    - [Concepts: Workloads: Pods: Pod Lifecycle](https://v1-13.docs.kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/)
+    - [Concepts: Workloads: Pods: Pod Lifecycle](https://v1-14.docs.kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/)
 
-    - [Tasks: Configure Pods and Containers: Liveness and Readiness Probes](https://v1-13.docs.kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-probes/)
+    - [Tasks: Configure Pods and Containers: Liveness and Readiness Probes](https://v1-14.docs.kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-probes/)
 
 ## Installation, Configuration & Validation 12%
 
 - Design a Kubernetes cluster.
 
-    - [Concepts: Cluster Administration: Overview: Planning a Cluster](https://v1-13.docs.kubernetes.io/docs/concepts/cluster-administration/cluster-administration-overview/#planning-a-cluster)
+    - [Concepts: Cluster Administration: Overview: Planning a Cluster](https://v1-14.docs.kubernetes.io/docs/concepts/cluster-administration/cluster-administration-overview/#planning-a-cluster)
 
 - Install Kubernetes masters and nodes.
 
-    - [Setup: Bootstrapping Clusters with kubeadm: Creating a single master cluster with kubeadm](https://v1-13.docs.kubernetes.io/docs/setup/independent/create-cluster-kubeadm/)
+    - [Setup: Bootstrapping Clusters with kubeadm: Creating a single master cluster with kubeadm](https://v1-14.docs.kubernetes.io/docs/setup/independent/create-cluster-kubeadm/)
 
 - Configure secure cluster communications.
 
-    - [Tasks: TLS: Manage TLS Certificates in a Cluster](https://v1-13.docs.kubernetes.io/docs/tasks/tls/managing-tls-in-a-cluster/)
+    - [Tasks: TLS: Manage TLS Certificates in a Cluster](https://v1-14.docs.kubernetes.io/docs/tasks/tls/managing-tls-in-a-cluster/)
 
 - Configure a Highly-Available Kubernetes cluster.
 
-    - [Setup: Bootstrapping Clusters with kubeadm: Creating Highly Available Clusters with kubeadm](https://v1-13.docs.kubernetes.io/docs/setup/independent/high-availability/)
+    - [Setup: Bootstrapping Clusters with kubeadm: Creating Highly Available Clusters with kubeadm](https://v1-14.docs.kubernetes.io/docs/setup/independent/high-availability/)
 
 - Know where to get the Kubernetes release binaries.
 
-    - [Setup: Downloading Kubernetes: Bulding from Source](https://v1-13.docs.kubernetes.io/docs/setup/release/building-from-source/)
+    - [Setup: Downloading Kubernetes: Bulding from Source](https://v1-14.docs.kubernetes.io/docs/setup/release/building-from-source/)
 
 - Provision underlying infrastructure to deploy a Kubernetes cluster.
 
-    - [Setup: Picking the Right Solution](https://v1-13.docs.kubernetes.io/docs/setup/pick-right-solution/)
+    - [Setup: Picking the Right Solution](https://v1-14.docs.kubernetes.io/docs/setup/pick-right-solution/)
 
 - Choose a network solution.
 
-    - [Setup: Bootstrapping Clusters with kubeadm: Creating a single master cluster with kubeadm: #Installing a pod network add-on](https://v1-13.docs.kubernetes.io/docs/setup/independent/create-cluster-kubeadm/#pod-network)
+    - [Setup: Bootstrapping Clusters with kubeadm: Creating a single master cluster with kubeadm: #Installing a pod network add-on](https://v1-14.docs.kubernetes.io/docs/setup/independent/create-cluster-kubeadm/#pod-network)
 
 - Choose your Kubernetes infrastructure configuration.
 
-    - [Setup: Building Large Clusters](https://v1-13.docs.kubernetes.io/docs/setup/cluster-large/)
+    - [Setup: Building Large Clusters](https://v1-14.docs.kubernetes.io/docs/setup/cluster-large/)
 
 - Run end-to-end tests on your cluster.
 
-    - [Reference: Kubectl Commands: Cluster Management](https://v1-13.docs.kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#-strong-cluster-management-strong-)
+    - [Reference: Kubectl Commands: Cluster Management](https://v1-14.docs.kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#-strong-cluster-management-strong-)
 
     - [Extra: End-to-End Testing in Kubernetes](https://github.com/kubernetes/community/blob/master/contributors/devel/e2e-tests.md)
 
@@ -172,25 +172,25 @@ kubectl get svc  -o wide --all-namespaces
 
 - Understand the Kubernetes API primitives
 
-    - [Concepts: Kubernetes API Overview](https://v1-13.docs.kubernetes.io/docs/concepts/overview/kubernetes-api/)
-    - [Concepts: Understanding Kubernetes Objects](https://v1-13.docs.kubernetes.io/docs/concepts/overview/working-with-objects/kubernetes-objects/).
-    - [Reference: API Reference - V1.12](https://v1-13.docs.kubernetes.io/docs/reference/kubernetes-api/)
+    - [Concepts: Kubernetes API Overview](https://v1-14.docs.kubernetes.io/docs/concepts/overview/kubernetes-api/)
+    - [Concepts: Understanding Kubernetes Objects](https://v1-14.docs.kubernetes.io/docs/concepts/overview/working-with-objects/kubernetes-objects/).
+    - [Reference: API Reference - V1.12](https://v1-14.docs.kubernetes.io/docs/reference/kubernetes-api/)
     - [Optional: Kubernetes Architecture 101 (Video Youtube)](https://www.youtube.com/watch?v=zeS6OyDoy78)
 
 - Understand the Kubernetes cluster architecture.
 
-    - [Concepts: Kubernetes Components](https://v1-13.docs.kubernetes.io/docs/concepts/overview/components/)
-    - [Concepts: Concepts Underlying the Cloud Controller Manager](https://v1-13.docs.kubernetes.io/docs/concepts/architecture/cloud-controller/)
+    - [Concepts: Kubernetes Components](https://v1-14.docs.kubernetes.io/docs/concepts/overview/components/)
+    - [Concepts: Concepts Underlying the Cloud Controller Manager](https://v1-14.docs.kubernetes.io/docs/concepts/architecture/cloud-controller/)
 
 - Understand Services and other network primitives.
 
-    - [Concepts: Services, Load Balancing and Networking](https://v1-13.docs.kubernetes.io/docs/concepts/services-networking/service/)
+    - [Concepts: Services, Load Balancing and Networking](https://v1-14.docs.kubernetes.io/docs/concepts/services-networking/service/)
 
 ## Networking 11%
 
 - Understand the networking configuration on the cluster nodes.
 
-    - [Concepts: Cluster Administration: Cluster Networking](https://v1-13.docs.kubernetes.io/docs/concepts/cluster-administration/networking/)
+    - [Concepts: Cluster Administration: Cluster Networking](https://v1-14.docs.kubernetes.io/docs/concepts/cluster-administration/networking/)
     - [Extra: Kubernetes Networking Explained: Introduction](https://supergiant.io/blog/kubernetes-networking-explained-introduction)
 
 - Understand Pod networking concepts.
@@ -199,50 +199,50 @@ kubectl get svc  -o wide --all-namespaces
 
 - Understand service networking.
 
-    - [Concepts: Services, Load Balancing, and Networking: Services](https://v1-13.docs.kubernetes.io/docs/concepts/services-networking/service/)
+    - [Concepts: Services, Load Balancing, and Networking: Services](https://v1-14.docs.kubernetes.io/docs/concepts/services-networking/service/)
 
 - Deploy and configure network load balancer.
 
-    - [Tasks: Access Applications in a Cluster: Create an External Load Balancer](https://v1-13.docs.kubernetes.io/docs/tasks/access-application-cluster/create-external-load-balancer/)
+    - [Tasks: Access Applications in a Cluster: Create an External Load Balancer](https://v1-14.docs.kubernetes.io/docs/tasks/access-application-cluster/create-external-load-balancer/)
 
 - Know how to use Ingress rules.
 
-    - [Concepts: Services, Load Balancing, and Networking: Ingress](https://v1-13.docs.kubernetes.io/docs/concepts/services-networking/ingress/)
+    - [Concepts: Services, Load Balancing, and Networking: Ingress](https://v1-14.docs.kubernetes.io/docs/concepts/services-networking/ingress/)
 
 - Know how to configure and use the cluster DNS.
 
-    - [Concepts: Services, Load Balancing, and Networking: DNS for Services and Pods](https://v1-13.docs.kubernetes.io/docs/concepts/services-networking/dns-pod-service/)
+    - [Concepts: Services, Load Balancing, and Networking: DNS for Services and Pods](https://v1-14.docs.kubernetes.io/docs/concepts/services-networking/dns-pod-service/)
 
 - Understand CNI.
 
-    - [Concepts: Extending Kubernetes: Compute, Storage, and Networking Extensions: Network Plugins](https://v1-13.docs.kubernetes.io/docs/concepts/extend-kubernetes/compute-storage-net/network-plugins/)
+    - [Concepts: Extending Kubernetes: Compute, Storage, and Networking Extensions: Network Plugins](https://v1-14.docs.kubernetes.io/docs/concepts/extend-kubernetes/compute-storage-net/network-plugins/)
 
 ## Scheduling 5%
 
 - Use label selectors to schedule Pods.
 
-    - [Concepts: Overview: Working with Kubernetes Objects: Labels and Selectors](https://v1-13.docs.kubernetes.io/docs/concepts/overview/working-with-objects/labels/)
+    - [Concepts: Overview: Working with Kubernetes Objects: Labels and Selectors](https://v1-14.docs.kubernetes.io/docs/concepts/overview/working-with-objects/labels/)
 
 - Understand the role of DaemonSets.
 
-    - [Concepts: Workloads: Controllers: DaemonSet](https://v1-13.docs.kubernetes.io/docs/concepts/workloads/controllers/daemonset/)
+    - [Concepts: Workloads: Controllers: DaemonSet](https://v1-14.docs.kubernetes.io/docs/concepts/workloads/controllers/daemonset/)
 
 - Understand how resource limits can affect Podscheduling.
 
-    - [Tasks: Administer a Cluster: Manage Memory, CPU, and API Resources: Configure Default Memory Requests and Limits for a Namespace](https://v1-13.docs.kubernetes.io/docs/tasks/administer-cluster/manage-resources/memory-default-namespace/)
-    - [Tasks: Administer a Cluster: Manage Memory, CPU, and API Resources: Configure Default CPU Requests and Limits for a Namespace](https://v1-13.docs.kubernetes.io/docs/tasks/administer-cluster/manage-resources/cpu-default-namespace/)
+    - [Tasks: Administer a Cluster: Manage Memory, CPU, and API Resources: Configure Default Memory Requests and Limits for a Namespace](https://v1-14.docs.kubernetes.io/docs/tasks/administer-cluster/manage-resources/memory-default-namespace/)
+    - [Tasks: Administer a Cluster: Manage Memory, CPU, and API Resources: Configure Default CPU Requests and Limits for a Namespace](https://v1-14.docs.kubernetes.io/docs/tasks/administer-cluster/manage-resources/cpu-default-namespace/)
 
 - Understand how to run multiple schedulers and how to configure Pods to use them.
 
-    - [Tasks: Administer a Cluster: Configure Multiple Schedulers](https://v1-13.docs.kubernetes.io/docs/tasks/administer-cluster/configure-multiple-schedulers/)
+    - [Tasks: Administer a Cluster: Configure Multiple Schedulers](https://v1-14.docs.kubernetes.io/docs/tasks/administer-cluster/configure-multiple-schedulers/)
 
 - Manually schedule a pod without a scheduler.
 
-    - [Tasks: Administer a Cluster: Static Pods](https://v1-13.docs.kubernetes.io/docs/tasks/administer-cluster/static-pod/)
+    - [Tasks: Administer a Cluster: Static Pods](https://v1-14.docs.kubernetes.io/docs/tasks/administer-cluster/static-pod/)
 
 - Dispaly scheduler events.
 
-    - [Tasks: Administer a Cluster: Configure Multiple Schedulers: #Verifying that the pods were scheduled using the desired schedulers](https://v1-13.docs.kubernetes.io/docs/tasks/administer-cluster/configure-multiple-schedulers/#verifying-that-the-pods-were-scheduled-using-the-desired-schedulers)
+    - [Tasks: Administer a Cluster: Configure Multiple Schedulers: #Verifying that the pods were scheduled using the desired schedulers](https://v1-14.docs.kubernetes.io/docs/tasks/administer-cluster/configure-multiple-schedulers/#verifying-that-the-pods-were-scheduled-using-the-desired-schedulers)
 
         ```bash
         $ kubectl get events
@@ -254,52 +254,52 @@ kubectl get svc  -o wide --all-namespaces
         ```
 - Know how to configure the Kubernetes scheduler.
 
-    - [Tasks: Administer a Cluster: Configure Multiple Schedulers](https://v1-13.docs.kubernetes.io/docs/tasks/administer-cluster/configure-multiple-schedulers/)
+    - [Tasks: Administer a Cluster: Configure Multiple Schedulers](https://v1-14.docs.kubernetes.io/docs/tasks/administer-cluster/configure-multiple-schedulers/)
 
 ## Security 12%
 
 - Know how to configure authentication and authorization.
 
-    - [Tasks: Administer a Cluster: Securing a Cluster](https://v1-13.docs.kubernetes.io/docs/tasks/administer-cluster/securing-a-cluster/)
+    - [Tasks: Administer a Cluster: Securing a Cluster](https://v1-14.docs.kubernetes.io/docs/tasks/administer-cluster/securing-a-cluster/)
 
 - Understand Kubernetes security primitives.
 
-    - [Reference: Accessing the API: Authorization Overview](https://v1-13.docs.kubernetes.io/docs/reference/access-authn-authz/authorization/)
+    - [Reference: Accessing the API: Authorization Overview](https://v1-14.docs.kubernetes.io/docs/reference/access-authn-authz/authorization/)
         - Check all sub resources (Node Authorization, ABAC, RBAC, and Webhook)
 
 - Know to configure network policies.
 
-    - [Tasks: Administer a Cluster: Declare Network Policy](https://v1-13.docs.kubernetes.io/docs/tasks/administer-cluster/declare-network-policy/)
+    - [Tasks: Administer a Cluster: Declare Network Policy](https://v1-14.docs.kubernetes.io/docs/tasks/administer-cluster/declare-network-policy/)
 
 - Create and manage TLS certificates for cluster components.
 
-    - [Tasks: TLS: Manage TLS Certificates in a Cluster](https://v1-13.docs.kubernetes.io/docs/tasks/tls/managing-tls-in-a-cluster/)
+    - [Tasks: TLS: Manage TLS Certificates in a Cluster](https://v1-14.docs.kubernetes.io/docs/tasks/tls/managing-tls-in-a-cluster/)
 
 - Work with images securely.
 
-    - [Concepts: Containers: Images](https://v1-13.docs.kubernetes.io/docs/concepts/containers/images/)
+    - [Concepts: Containers: Images](https://v1-14.docs.kubernetes.io/docs/concepts/containers/images/)
 
-    - [Concepts: Configuration: Best Practices: #Container Images](https://v1-13.docs.kubernetes.io/docs/concepts/configuration/overview/#container-images)
+    - [Concepts: Configuration: Best Practices: #Container Images](https://v1-14.docs.kubernetes.io/docs/concepts/configuration/overview/#container-images)
 
 - Define security contexts.
 
-    - [Tasks: Configure Pods and Containers: Configure a Security Context for a Pod or Container](https://v1-13.docs.kubernetes.io/docs/tasks/configure-pod-container/security-context/)
+    - [Tasks: Configure Pods and Containers: Configure a Security Context for a Pod or Container](https://v1-14.docs.kubernetes.io/docs/tasks/configure-pod-container/security-context/)
 
 - Secure persistent key value store.
 
-    - [Concepts: Configuration: Secrets](https://v1-13.docs.kubernetes.io/docs/concepts/configuration/secret/)
+    - [Concepts: Configuration: Secrets](https://v1-14.docs.kubernetes.io/docs/concepts/configuration/secret/)
 
 ## Cluster (Maintenance) 11%
 
 - Understand Kubernetes cluster upgrade process.
 
-    - [Tasks: Administration with kubeadm: Upgrading kubeadm clusters from v1.12 to v1.13](https://v1-13.docs.kubernetes.io/docs/tasks/administer-cluster/kubeadm/kubeadm-upgrade-1-13/)
-    - [Tasks: Administration with kubeadm: Upgrading kubeadm HA clusters from v1.12 to v1.13](https://v1-13.docs.kubernetes.io/docs/tasks/administer-cluster/kubeadm/kubeadm-upgrade-ha-1-13/)
+    - [Tasks: Administration with kubeadm: Upgrading kubeadm clusters from v1.13 to v1.14](https://v1-14.docs.kubernetes.io/docs/tasks/administer-cluster/kubeadm/kubeadm-upgrade-1-14/)
+    - [Tasks: Administration with kubeadm: Upgrading kubeadm HA clusters from v1.12 to v1.13](https://v1-14.docs.kubernetes.io/docs/tasks/administer-cluster/kubeadm/kubeadm-upgrade-ha-1-13/)
 
 - Facilitate operating system upgrades.
 - Implement backup and restore methodologies.
 
-    - [Tasks: Administer a Cluster: Operating etcd clusters for Kubernetes](https://v1-13.docs.kubernetes.io/docs/tasks/administer-cluster/configure-upgrade-etcd/)
+    - [Tasks: Administer a Cluster: Operating etcd clusters for Kubernetes](https://v1-14.docs.kubernetes.io/docs/tasks/administer-cluster/configure-upgrade-etcd/)
 
 ## Logging / Monitoring 5%
 
@@ -309,11 +309,11 @@ kubectl get svc  -o wide --all-namespaces
 
 - Understand how to monitor applications.
 
-    - [Tasks: Monitor, Log, and Debug: Application Introspection and Debugging](https://v1-13.docs.kubernetes.io/docs/tasks/debug-application-cluster/debug-application-introspection/)
+    - [Tasks: Monitor, Log, and Debug: Application Introspection and Debugging](https://v1-14.docs.kubernetes.io/docs/tasks/debug-application-cluster/debug-application-introspection/)
 
 - Manage cluster component logs.
 
-    - [Tasks: Monitor, Log, and Debug: Troubleshoot Clusters](https://v1-13.docs.kubernetes.io/docs/tasks/debug-application-cluster/debug-cluster/)
+    - [Tasks: Monitor, Log, and Debug: Troubleshoot Clusters](https://v1-14.docs.kubernetes.io/docs/tasks/debug-application-cluster/debug-cluster/)
 
         - Master Log Files
         ```
@@ -330,47 +330,47 @@ kubectl get svc  -o wide --all-namespaces
 
 - Manage application logs.
 
-    - [Tasks: Monitor, Log, and Debug: Troubleshoot Applications](https://v1-13.docs.kubernetes.io/docs/tasks/debug-application-cluster/debug-application/)
+    - [Tasks: Monitor, Log, and Debug: Troubleshoot Applications](https://v1-14.docs.kubernetes.io/docs/tasks/debug-application-cluster/debug-application/)
 
 
 ## Storage 7%
 
 - Understand persistent volumes and know how to create them.
 
-    - [Concepts: Storage: Persistent Volumes](https://v1-13.docs.kubernetes.io/docs/concepts/storage/persistent-volumes/)
+    - [Concepts: Storage: Persistent Volumes](https://v1-14.docs.kubernetes.io/docs/concepts/storage/persistent-volumes/)
 
 - Understand access modes for volumes.
 
-    - [Concepts: Storage: Persistent Volumes: #Access Modes](https://v1-13.docs.kubernetes.io/docs/concepts/storage/persistent-volumes/#access-modes)
+    - [Concepts: Storage: Persistent Volumes: #Access Modes](https://v1-14.docs.kubernetes.io/docs/concepts/storage/persistent-volumes/#access-modes)
 
 - Understand persistent volume claims primitive.
 
-    - [Concepts: Storage: Persistent Volumes: #PersistentVolumeClaims](https://v1-13.docs.kubernetes.io/docs/concepts/storage/persistent-volumes/#persistentvolumeclaims)
+    - [Concepts: Storage: Persistent Volumes: #PersistentVolumeClaims](https://v1-14.docs.kubernetes.io/docs/concepts/storage/persistent-volumes/#persistentvolumeclaims)
 
 - Understand Kubernetes storage objects.
 
-    - [Concepts: Storage: Volumes](https://v1-13.docs.kubernetes.io/docs/concepts/storage/volumes)
+    - [Concepts: Storage: Volumes](https://v1-14.docs.kubernetes.io/docs/concepts/storage/volumes)
 
 - Know how to configure applications with persistent storage.
 
-    - [Concepts: Storage: Volumes: #local](https://v1-13.docs.kubernetes.io/docs/concepts/storage/volumes/#local)
-    - [Concepts: Storage: Volumes: #hostPath](https://v1-13.docs.kubernetes.io/docs/concepts/storage/volumes/#hostpath)
+    - [Concepts: Storage: Volumes: #local](https://v1-14.docs.kubernetes.io/docs/concepts/storage/volumes/#local)
+    - [Concepts: Storage: Volumes: #hostPath](https://v1-14.docs.kubernetes.io/docs/concepts/storage/volumes/#hostpath)
 
 ## Troubleshooting 10%
 
 - Troubleshoot application failure.
 
 
-    - [Tasks: Monitor, Log, and Debug: Troubleshoot Applications](https://v1-13.docs.kubernetes.io/docs/tasks/debug-application-cluster/debug-application/)
-    - [Tasks: Monitor, Log, and Debug: Determine the Reason for Pod Failure](https://v1-13.docs.kubernetes.io/docs/tasks/debug-application-cluster/determine-reason-pod-failure/)
+    - [Tasks: Monitor, Log, and Debug: Troubleshoot Applications](https://v1-14.docs.kubernetes.io/docs/tasks/debug-application-cluster/debug-application/)
+    - [Tasks: Monitor, Log, and Debug: Determine the Reason for Pod Failure](https://v1-14.docs.kubernetes.io/docs/tasks/debug-application-cluster/determine-reason-pod-failure/)
 
 - Troubleshoot control plane failure.
 
-    - [Tasks: Monitor, Log, and Debug: Troubleshoot Clusters](https://v1-13.docs.kubernetes.io/docs/tasks/debug-application-cluster/debug-cluster/)
+    - [Tasks: Monitor, Log, and Debug: Troubleshoot Clusters](https://v1-14.docs.kubernetes.io/docs/tasks/debug-application-cluster/debug-cluster/)
 
 - Troubleshoot worker node failure.
 
-    - [Tasks: Monitor, Log, and Debug: Troubleshoot Clusters: #Worker Nodes](https://v1-13.docs.kubernetes.io/docs/tasks/debug-application-cluster/debug-cluster/#worker-nodes)
+    - [Tasks: Monitor, Log, and Debug: Troubleshoot Clusters: #Worker Nodes](https://v1-14.docs.kubernetes.io/docs/tasks/debug-application-cluster/debug-cluster/#worker-nodes)
 
 - Troubleshoot networking.
 
@@ -384,7 +384,7 @@ kubectl get svc  -o wide --all-namespaces
 
 # kubectl Ninja
 
-Tip: Use [kubectl Cheatsheet](https://v1-13.docs.kubernetes.io/docs/reference/kubectl/cheatsheet/) during the exam. You don't need to decorate everything.
+Tip: Use [kubectl Cheatsheet](https://v1-14.docs.kubernetes.io/docs/reference/kubectl/cheatsheet/) during the exam. You don't need to decorate everything.
 
 #### Useful commands or parameters during the exam:
 
