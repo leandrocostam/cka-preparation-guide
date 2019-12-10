@@ -1,0 +1,12 @@
+name: Check Kubernetes documentation links
+
+on: push
+
+jobs:
+  kubernetes-doc-link-check:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+      with:
+        fetch-depth: 1
+    - uses: gaurav-nelson/github-action-markdown-link-check@0.4.0
