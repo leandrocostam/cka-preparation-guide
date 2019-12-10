@@ -103,7 +103,7 @@ Exam objectives that outline of the knowledge, skills and abilities that a Certi
 
 - Install Kubernetes masters and nodes.
 
-    - [Setup: Bootstrapping Clusters with kubeadm: Creating a single master cluster with kubeadm](https://v1-14.docs.kubernetes.io/docs/setup/independent/create-cluster-kubeadm/)
+    - [Getting Started: Bootstrapping Clusters with kubeadm: Creating a single master cluster with kubeadm](https://v1-14.docs.kubernetes.io/docs/setup/independent/create-cluster-kubeadm/)
 
 - Configure secure cluster communications.
 
@@ -111,37 +111,37 @@ Exam objectives that outline of the knowledge, skills and abilities that a Certi
 
 - Configure a Highly-Available Kubernetes cluster.
 
-    - [Setup: Bootstrapping Clusters with kubeadm: Creating Highly Available Clusters with kubeadm](https://v1-14.docs.kubernetes.io/docs/setup/independent/high-availability/)
+    - [Getting Started: Bootstrapping Clusters with kubeadm: Creating Highly Available Clusters with kubeadm](https://v1-14.docs.kubernetes.io/docs/setup/production-environment/tools/kubeadm/high-availability/)
 
 - Know where to get the Kubernetes release binaries.
 
-    - [Setup: Downloading Kubernetes: Bulding from Source](https://v1-14.docs.kubernetes.io/docs/setup/release/building-from-source/)
+    - [Getting Started: v1.14 Release Notes](https://v1-14.docs.kubernetes.io/docs/setup/release/notes/)
 
 - Provision underlying infrastructure to deploy a Kubernetes cluster.
 
-    - [Setup: Picking the Right Solution](https://v1-14.docs.kubernetes.io/docs/setup/pick-right-solution/)
+    - [Getting Started](https://v1-14.docs.kubernetes.io/docs/setup/)
 
 - Choose a network solution.
 
-    - [Setup: Bootstrapping Clusters with kubeadm: Creating a single master cluster with kubeadm: #Installing a pod network add-on](https://v1-14.docs.kubernetes.io/docs/setup/independent/create-cluster-kubeadm/#pod-network)
+    - [Getting Started: Bootstrapping Clusters with kubeadm: Creating a single master cluster with kubeadm: #Installing a pod network add-on](https://v1-14.docs.kubernetes.io/docs/setup/production-environment/tools/kubeadm/create-cluster-kubeadm/#pod-network)
 
 - Choose your Kubernetes infrastructure configuration.
 
-    - [Setup: Building Large Clusters](https://v1-14.docs.kubernetes.io/docs/setup/cluster-large/)
+    - [Getting Started: Bootstrapping Clusters with kubeadm: Options for Highly Available topology](https://v1-14.docs.kubernetes.io/docs/setup/production-environment/tools/kubeadm/ha-topology/)
 
 - Run end-to-end tests on your cluster.
 
     - [Reference: Kubectl Commands: Cluster Management](https://v1-14.docs.kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#-strong-cluster-management-strong-)
 
-    - [Extra: End-to-End Testing in Kubernetes](https://github.com/kubernetes/community/blob/master/contributors/devel/e2e-tests.md)
+    - [Extra: End-to-End Testing in Kubernetes](https://github.com/kubernetes/community/blob/master/contributors/devel/sig-testing/e2e-tests.md)
 
 - Analyse end-to-end tests results.
 
-    - [Extra: Kubetest](https://github.com/kubernetes/test-infra/tree/master/kubetest)
+    - [Extra: Kubetest](https://github.com/kubernetes/community/blob/master/contributors/devel/sig-testing/e2e-tests.md)
 
 - Run Node end-to-end tests.
 
-    - [Node End-To-End tests](https://github.com/kubernetes/community/blob/master/contributors/devel/e2e-node-tests.md)
+    - [Node End-To-End tests](https://github.com/kubernetes/kubernetes/tree/master/test/e2e/node)
 
 ```bash
 # Kucebtl Cheatsheet commands to end-to-end tests
