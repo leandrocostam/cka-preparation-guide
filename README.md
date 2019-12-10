@@ -103,7 +103,7 @@ Exam objectives that outline of the knowledge, skills and abilities that a Certi
 
 - Install Kubernetes masters and nodes.
 
-    - [Getting Started: Bootstrapping Clusters with kubeadm: Creating a single master cluster with kubeadm](https://v1-14.docs.kubernetes.io/docs/setup/independent/create-cluster-kubeadm/)
+    - [Getting Started: Bootstrapping Clusters with kubeadm: Creating a single master cluster with kubeadm](https://v1-14.docs.kubernetes.io/docs/setup/production-environment/tools/kubeadm/create-cluster-kubeadm/)
 
 - Configure secure cluster communications.
 
