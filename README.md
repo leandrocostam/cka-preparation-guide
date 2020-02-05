@@ -1,3 +1,5 @@
+![Check Kubernetes documentation links](https://github.com/leandrocostam/kubernetes-certified-administrator-prep-guide/workflows/Check%20Kubernetes%20documentation%20links/badge.svg)
+
 # Certified Kubernetes Administrator (CKA) - V1.14.1
 
 The objective of this repository is help you for taking the Certified Kubernetes Administrator (CKA) exam using online resources, especially using resources from [Kubernetes Official Documentation](https://kubernetes.io).
