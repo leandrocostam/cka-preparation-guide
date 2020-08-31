@@ -8,18 +8,20 @@ assignees: leandrocostam
 ---
 
 #### Action
-[] Add
-[] Modify
-[] Remove
-[] Other
+
+- [ ] Add
+- [ ] Modify
+- [ ] Remove
+- [ ] Other
 
 #### Section
-[] Introduction
-[] Exam
-[] CKA Curriculum
-[] CKA Preparation Courses
-[] kubectl Ninja
-[] CKA Tips
-[] Other
+
+- [ ] Introduction
+- [ ] Exam
+- [ ] CKA Curriculum
+- [ ] CKA Preparation Courses
+- [ ] kubectl Ninja
+- [ ] CKA Tips
+- [ ] Other
 
 #### Describe
