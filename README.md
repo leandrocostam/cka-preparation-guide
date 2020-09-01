@@ -126,6 +126,7 @@ kubectl get svc  -o wide --all-namespaces
 
         # Rolling back to a previous revision
         kubectl rollout undo deployment.v1.apps/nginx-deployment
+        ```
 
 - Use ConfigMaps and Secrets to configure applications.
 
