@@ -4,13 +4,13 @@
 
 The objective of this repository is help you for taking the Certified Kubernetes Administrator (CKA) exam using online resources, especially using resources from [Kubernetes Official Documentation](https://kubernetes.io).
 
-The references were selected for the [Exam Curriculum 1.19](https://github.com/cncf/curriculum/blob/master/Coming%20Soon%20in%20September%202020%20-%20%20cka_curriculum_v1.19.pdf), which uses Kubernetes 1.19 version, and there are exclusive information for API objects and annotations. For more information, please see [CKA Curriculum](https://github.com/cncf/curriculum/).
+The references were selected for the [Exam Curriculum 1.19](https://github.com/cncf/curriculum/blob/master/CKA_Curriculum_v1.19.pdf), which uses Kubernetes 1.19 version, and there are exclusive information for API objects and annotations. For more information, please see [CKA Curriculum](https://github.com/cncf/curriculum/).
 
 Please, feel free to place a pull request whether something is not up-to-date, should be added or contains wrong information/reference.
 
 # Exam
 
-The exam is kind of "put your hands on", where you have 24 problems to fix within 180 minutes. Based on that, you have ~7.5 minutes per problem, where usually you will spend more time in some problems than others.
+The exam is kind of "put your hands on", where you have some problems to fix within 120 minutes.
 
 My tip: Spend your time wisely. Use the Notebook feature (provided in exam's UI) to keep track of your progress, where you might take notes of each question, put some annotations in order to help you. Additionally, don't get stuck, move to the next problem, and take it back when you finish all the other problems.
 
