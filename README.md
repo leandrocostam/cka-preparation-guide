@@ -239,7 +239,7 @@ kubectl get svc  -o wide --all-namespaces
 
 # CKA Preparation Courses
 
-- [Certified Kubernetes Administrator (CKA) - Linux Academy](https://linuxacademy.com/course/cloud-native-certified-kubernetes-administrator-cka/)
+- [Certified Kubernetes Administrator (CKA) - A Cloud Guru (formerly Linux Academy)](https://acloudguru.com/course/cloud-native-certified-kubernetes-administrator-cka/)
 
 - [Kubernetes Fundamentals (LFS258) - Linux Foundation](https://training.linuxfoundation.org/training/kubernetes-fundamentals/)
 
