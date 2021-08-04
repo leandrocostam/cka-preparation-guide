@@ -247,7 +247,7 @@ kubectl get svc  -o wide --all-namespaces
 
 # kubectl Ninja
 
-Tip: Use [kubectl Cheatsheet](https://v1-18.docs.kubernetes.io/docs/reference/kubectl/cheatsheet/) during the exam. You don't need to decorate everything.
+Tip: Use [kubectl Cheatsheet](https://docs.kubernetes.io/docs/reference/kubectl/cheatsheet/) during the exam. You don't need to decorate everything.
 
 #### Useful commands or parameters during the exam:
 
