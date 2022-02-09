@@ -1,10 +1,10 @@
 ![Check Kubernetes documentation links](https://github.com/leandrocostam/kubernetes-certified-administrator-prep-guide/workflows/Check%20Kubernetes%20documentation%20links/badge.svg)
 
-# Certified Kubernetes Administrator (CKA) - V1.21
+# Certified Kubernetes Administrator (CKA) - V1.22
 
 The objective of this repository is help you for taking the Certified Kubernetes Administrator (CKA) exam using online resources, especially using resources from [Kubernetes Official Documentation](https://kubernetes.io).
 
-The references were selected for the [Exam Curriculum 1.21](https://github.com/cncf/curriculum/blob/e443151e921916877ae2aaeb88405ec7e9e8bd25/CKA_Curriculum_v1.21.pdf), and there are exclusive information for API objects and annotations. For more information, please see [CKA Curriculum](https://github.com/cncf/curriculum/).
+The references were selected for the [Exam Curriculum 1.22](https://github.com/cncf/curriculum/blob/2ef709ef733debfcd920056cc7707e4fe3153518/CKA_Curriculum_v1.22.pdf), and there are exclusive information for API objects and annotations. For more information, please see [CKA Curriculum](https://github.com/cncf/curriculum/).
 
 Please, feel free to place a pull request whether something is not up-to-date, should be added or contains wrong information/reference.
 
@@ -60,9 +60,6 @@ kubectl cluster-info
 # Dump current cluster state to stdout
 kubectl cluster-info dump
 
-# Check health of cluster components
-kubectl get componentstatuses
-
 # List the nodes
 kubectl get nodes
 
@@ -103,7 +100,7 @@ kubectl get svc  -o wide --all-namespaces
             spec:
               containers:
               - name: nginx
-                image: nginx:1.15.4
+                image: nginx:1.21.6
                 ports:
                 - containerPort: 80
         ```
@@ -265,17 +262,17 @@ kubectl get pods -o wide
 kubectl get pods --all-namespaces
 ```
 
-Generate a manifest template from imperative spec using the output option "-o yaml" and the parameter "--dry-run":
+Generate a manifest template from imperative spec using the output option "-o yaml" and the parameter "--dry-run=client":
 
 ```shell
 # create a service
-kubectl create service clusterip my-service --tcp=8080 --dry-run -o yaml
+kubectl create service clusterip my-service --tcp=8080 --dry-run=client -o yaml
 
 # create a deployment
-kubectl create deployment nginx --image=nginx --dry-run -o yaml
+kubectl create deployment nginx --image=nginx --dry-run=client -o yaml
 
 # create a pod
-kubectl run nginx --image=nginx --restart=Never --dry-run -o yaml
+kubectl run nginx --image=nginx --restart=Never --dry-run=client -o yaml
 ```
 
 Create resources using kubectl + stdin instead of creating them from manifest files. It helps a lot and saves time. You can use the output of the command above and modify as required:
