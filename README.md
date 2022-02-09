@@ -14,7 +14,7 @@ The exam is kind of "put your hands on", where you have some problems to fix wit
 
 My tip: Spend your time wisely. Use the Notebook feature (provided in exam's UI) to keep track of your progress, where you might take notes of each question, put some annotations in order to help you. Additionally, don't get stuck, move to the next problem, and take it back when you finish all the other problems.
 
-Exam Cost: $300 and includes one free retake.
+Exam Cost: $375 and includes one free retake.
 
 It's important to mention that you have access to [Kubernetes Official Documentation](https://kubernetes.io) during the exam. So get yourself familiar with Kubernetes online documentation, and know where to find all specific topics listed below. It might be helpful for you during the exam.
 
