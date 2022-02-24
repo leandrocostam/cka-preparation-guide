@@ -1,12 +1,16 @@
-![Check Kubernetes documentation links](https://github.com/leandrocostam/kubernetes-certified-administrator-prep-guide/workflows/Check%20Kubernetes%20documentation%20links/badge.svg)
+![Check Kubernetes documentation links](https://github.com/leandrocostam/cka-preparation-guide/workflows/Check%20Kubernetes%20documentation%20links/badge.svg)
 
 # Certified Kubernetes Administrator (CKA) - V1.22
 
 The objective of this repository is help you for taking the Certified Kubernetes Administrator (CKA) exam using online resources, especially using resources from [Kubernetes Official Documentation](https://kubernetes.io).
 
-The references were selected for the [Exam Curriculum 1.22](https://github.com/cncf/curriculum/blob/2ef709ef733debfcd920056cc7707e4fe3153518/CKA_Curriculum_v1.22.pdf), and there are exclusive information for API objects and annotations. For more information, please see [CKA Curriculum](https://github.com/cncf/curriculum/).
+The references were selected for the [Exam Curriculum 1.22](https://github.com/cncf/curriculum/blob/2ef709ef733debfcd920056cc7707e4fe3153518/CKA_Curriculum_v1.22.pdf), and there are exclusive information for API objects and annotations. For more information, please see [CNCF Curriculum](https://github.com/cncf/curriculum/).
 
 Please, feel free to place a pull request whether something is not up-to-date, should be added or contains wrong information/reference.
+
+## CNCF Preparation Guides
+
+- [Certified Kubernetes Security Specialist (CKS) - Preparation Guide](https://github.com/leandrocostam/cks-preparation-guide)
 
 # Exam
 
@@ -295,6 +299,7 @@ source <(kubectl completion bash)
 
 Practice a lot with Kubernetes:
 
+- [Killer.sh - CKA Simulator](https://killer.sh/cka)
 - [Kubernetes the Hard Way by Kelsey Hightower](https://github.com/kelseyhightower/kubernetes-the-hard-way)
 - [Katacoda: Learn Kubernetes using Interactive Browser-Based Scenarios](https://www.katacoda.com/courses/kubernetes)
 
