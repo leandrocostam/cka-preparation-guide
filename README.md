@@ -8,7 +8,7 @@ The references were selected for the [Exam Curriculum 1.22](https://github.com/c
 
 Please, feel free to place a pull request whether something is not up-to-date, should be added or contains wrong information/reference.
 
-## CNCF Preparation Guides
+There are other Kubernetes certification exam preparation guides available:
 
 - [Certified Kubernetes Security Specialist (CKS) - Preparation Guide](https://github.com/leandrocostam/cks-preparation-guide)
 
