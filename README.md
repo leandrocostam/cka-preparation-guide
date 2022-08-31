@@ -1,10 +1,10 @@
 ![Check Kubernetes documentation links](https://github.com/leandrocostam/cka-preparation-guide/workflows/Check%20Kubernetes%20documentation%20links/badge.svg)
 
-# Certified Kubernetes Administrator (CKA) - V1.22
+# Certified Kubernetes Administrator (CKA) - V1.24
 
 The objective of this repository is help you for taking the Certified Kubernetes Administrator (CKA) exam using online resources, especially using resources from [Kubernetes Official Documentation](https://kubernetes.io).
 
-The references were selected for the [Exam Curriculum 1.22](https://github.com/cncf/curriculum/blob/2ef709ef733debfcd920056cc7707e4fe3153518/CKA_Curriculum_v1.22.pdf), and there are exclusive information for API objects and annotations. For more information, please see [CNCF Curriculum](https://github.com/cncf/curriculum/).
+The references were selected for the [Exam Curriculum 1.24](https://github.com/cncf/curriculum/raw/5953358a5d13567974fcfe8936447bc759972635/CKA_Curriculum_v1.24.pdf), and there are exclusive information for API objects and annotations. For more information, please see [CNCF Curriculum](https://github.com/cncf/curriculum/).
 
 Please, feel free to place a pull request whether something is not up-to-date, should be added or contains wrong information/reference.
 
@@ -83,7 +83,7 @@ kubectl get svc  -o wide --all-namespaces
 
     - [Kubernetes Documentation > Concepts > Workloads > Controllers > Deployments](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)
 
-    - Example Deployment File (dep-nginx.yaml) using NGINX 
+    - Example Deployment File (dep-nginx.yaml) using NGINX
 
         ```yaml
         apiVersion: apps/v1
@@ -173,7 +173,7 @@ kubectl get svc  -o wide --all-namespaces
 
     - [Kubernetes Documentation > Concepts > Workloads > Pods > Networking](https://kubernetes.io/docs/concepts/workloads/pods/#pod-networking)
 
-    - [GitHub > Kubernetes Community Documentation > Design Proposals > Networking](https://github.com/kubernetes/community/blob/master/contributors/design-proposals/network/networking.md)
+    - [GitHub > Kubernetes Community Documentation > Design Proposals > Networking](https://raw.githubusercontent.com/kubernetes/design-proposals-archive/main/network/networking.md)
 
 - Understand ClusterIP, NodePort, LoadBalancer service types and endpoints.
 
@@ -301,7 +301,6 @@ Practice a lot with Kubernetes:
 
 - [Killer.sh - CKA Simulator](https://killer.sh/cka)
 - [Kubernetes the Hard Way by Kelsey Hightower](https://github.com/kelseyhightower/kubernetes-the-hard-way)
-- [Katacoda: Learn Kubernetes using Interactive Browser-Based Scenarios](https://www.katacoda.com/courses/kubernetes)
 
 # CKA Tips
 
