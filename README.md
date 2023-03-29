@@ -1,10 +1,10 @@
 ![Check Kubernetes documentation links](https://github.com/leandrocostam/cka-preparation-guide/workflows/Check%20Kubernetes%20documentation%20links/badge.svg)
 
-# Certified Kubernetes Administrator (CKA) - V1.24
+# Certified Kubernetes Administrator (CKA) - V1.26
 
 The objective of this repository is help you for taking the Certified Kubernetes Administrator (CKA) exam using online resources, especially using resources from [Kubernetes Official Documentation](https://kubernetes.io).
 
-The references were selected for the [Exam Curriculum 1.24](https://github.com/cncf/curriculum/raw/5953358a5d13567974fcfe8936447bc759972635/CKA_Curriculum_v1.24.pdf), and there are exclusive information for API objects and annotations. For more information, please see [CNCF Curriculum](https://github.com/cncf/curriculum/).
+The references were selected for the [Exam Curriculum 1.26](https://github.com/cncf/curriculum/blob/876a26bff94d62bf53d06c80d50b8091c000c614/CKA_Curriculum_v1.26.pdf), and there are exclusive information for API objects and annotations. For more information, please see [CNCF Curriculum](https://github.com/cncf/curriculum/).
 
 Please, feel free to place a pull request whether something is not up-to-date, should be added or contains wrong information/reference.
 
@@ -306,5 +306,4 @@ Practice a lot with Kubernetes:
 
 Some links that contain tips that might help you from different perspectives of the CKA exam.
 
-- [Graham Moore - 7.5 tips to help you ace the Certified Kubernetes Administrator (CKA) exam](https://kubedex.com/7-5-tips-to-help-you-ace-the-certified-kubernetes-administrator-cka-exam/)
 - [How to pass the Certified Kubernetes Administrator (CKA) exam on the first attempt](https://medium.com/devopslinks/how-to-pass-certified-kubernetes-administrator-cka-exam-on-first-attempt-36c0ceb4c9e)
