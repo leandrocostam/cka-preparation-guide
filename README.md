@@ -1,20 +1,24 @@
-![Check Kubernetes documentation links](https://github.com/leandrocostam/kubernetes-certified-administrator-prep-guide/workflows/Check%20Kubernetes%20documentation%20links/badge.svg)
+![Check Kubernetes documentation links](https://github.com/leandrocostam/cka-preparation-guide/workflows/Check%20Kubernetes%20documentation%20links/badge.svg)
 
-# Certified Kubernetes Administrator (CKA) - V1.19 (New CKA Curriculum - Set/20)
+# Certified Kubernetes Administrator (CKA) - V1.26
 
 The objective of this repository is help you for taking the Certified Kubernetes Administrator (CKA) exam using online resources, especially using resources from [Kubernetes Official Documentation](https://kubernetes.io).
 
-The references were selected for the [Exam Curriculum 1.19](https://github.com/cncf/curriculum/blob/master/Coming%20Soon%20in%20September%202020%20-%20%20cka_curriculum_v1.19.pdf), which uses Kubernetes 1.19 version, and there are exclusive information for API objects and annotations. For more information, please see [CKA Curriculum](https://github.com/cncf/curriculum/).
+The references were selected for the [Exam Curriculum 1.26](https://github.com/cncf/curriculum/blob/876a26bff94d62bf53d06c80d50b8091c000c614/CKA_Curriculum_v1.26.pdf), and there are exclusive information for API objects and annotations. For more information, please see [CNCF Curriculum](https://github.com/cncf/curriculum/).
 
 Please, feel free to place a pull request whether something is not up-to-date, should be added or contains wrong information/reference.
 
+There are other Kubernetes certification exam preparation guides available:
+
+- [Certified Kubernetes Security Specialist (CKS) - Preparation Guide](https://github.com/leandrocostam/cks-preparation-guide)
+
 # Exam
 
-The exam is kind of "put your hands on", where you have 24 problems to fix within 180 minutes. Based on that, you have ~7.5 minutes per problem, where usually you will spend more time in some problems than others.
+The exam is kind of "put your hands on", where you have some problems to fix within 120 minutes.
 
 My tip: Spend your time wisely. Use the Notebook feature (provided in exam's UI) to keep track of your progress, where you might take notes of each question, put some annotations in order to help you. Additionally, don't get stuck, move to the next problem, and take it back when you finish all the other problems.
 
-Exam Cost: $300 and includes one free retake.
+Exam Cost: $375 and includes one free retake.
 
 It's important to mention that you have access to [Kubernetes Official Documentation](https://kubernetes.io) during the exam. So get yourself familiar with Kubernetes online documentation, and know where to find all specific topics listed below. It might be helpful for you during the exam.
 
@@ -60,9 +64,6 @@ kubectl cluster-info
 # Dump current cluster state to stdout
 kubectl cluster-info dump
 
-# Check health of cluster components
-kubectl get componentstatuses
-
 # List the nodes
 kubectl get nodes
 
@@ -82,7 +83,7 @@ kubectl get svc  -o wide --all-namespaces
 
     - [Kubernetes Documentation > Concepts > Workloads > Controllers > Deployments](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)
 
-    - Example Deployment File (dep-nginx.yaml) using NGINX 
+    - Example Deployment File (dep-nginx.yaml) using NGINX
 
         ```yaml
         apiVersion: apps/v1
@@ -103,7 +104,7 @@ kubectl get svc  -o wide --all-namespaces
             spec:
               containers:
               - name: nginx
-                image: nginx:1.15.4
+                image: nginx:1.21.6
                 ports:
                 - containerPort: 80
         ```
@@ -172,7 +173,7 @@ kubectl get svc  -o wide --all-namespaces
 
     - [Kubernetes Documentation > Concepts > Workloads > Pods > Networking](https://kubernetes.io/docs/concepts/workloads/pods/#pod-networking)
 
-    - [GitHub > Kubernetes Community Documentation > Design Proposals > Networking](https://github.com/kubernetes/community/blob/master/contributors/design-proposals/network/networking.md)
+    - [GitHub > Kubernetes Community Documentation > Design Proposals > Networking](https://raw.githubusercontent.com/kubernetes/design-proposals-archive/main/network/networking.md)
 
 - Understand ClusterIP, NodePort, LoadBalancer service types and endpoints.
 
@@ -239,7 +240,7 @@ kubectl get svc  -o wide --all-namespaces
 
 # CKA Preparation Courses
 
-- [Certified Kubernetes Administrator (CKA) - Linux Academy](https://linuxacademy.com/course/cloud-native-certified-kubernetes-administrator-cka/)
+- [Certified Kubernetes Administrator (CKA) - A Cloud Guru (formerly Linux Academy)](https://acloudguru.com/course/cloud-native-certified-kubernetes-administrator-cka/)
 
 - [Kubernetes Fundamentals (LFS258) - Linux Foundation](https://training.linuxfoundation.org/training/kubernetes-fundamentals/)
 
@@ -247,7 +248,7 @@ kubectl get svc  -o wide --all-namespaces
 
 # kubectl Ninja
 
-Tip: Use [kubectl Cheatsheet](https://v1-18.docs.kubernetes.io/docs/reference/kubectl/cheatsheet/) during the exam. You don't need to decorate everything.
+Tip: Use [kubectl Cheatsheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/) during the exam. You don't need to decorate everything.
 
 #### Useful commands or parameters during the exam:
 
@@ -265,17 +266,17 @@ kubectl get pods -o wide
 kubectl get pods --all-namespaces
 ```
 
-Generate a manifest template from imperative spec using the output option "-o yaml" and the parameter "--dry-run":
+Generate a manifest template from imperative spec using the output option "-o yaml" and the parameter "--dry-run=client":
 
 ```shell
 # create a service
-kubectl create service clusterip my-service --tcp=8080 --dry-run -o yaml
+kubectl create service clusterip my-service --tcp=8080 --dry-run=client -o yaml
 
 # create a deployment
-kubectl create deployment nginx --image=nginx --dry-run -o yaml
+kubectl create deployment nginx --image=nginx --dry-run=client -o yaml
 
 # create a pod
-kubectl run nginx --image=nginx --restart=Never --dry-run -o yaml
+kubectl run nginx --image=nginx --restart=Never --dry-run=client -o yaml
 ```
 
 Create resources using kubectl + stdin instead of creating them from manifest files. It helps a lot and saves time. You can use the output of the command above and modify as required:
@@ -283,12 +284,14 @@ Create resources using kubectl + stdin instead of creating them from manifest fi
 ```shell
 cat <<EOF | kubectl create -f -
 ...
-EOF  
+EOF
 ```
+
 It saves lots of time, believe me.
 
 Kubectl Autocomplete
-```shell 
+
+```shell
 source <(kubectl completion bash)
 ```
 
@@ -296,12 +299,11 @@ source <(kubectl completion bash)
 
 Practice a lot with Kubernetes:
 
+- [Killer.sh - CKA Simulator](https://killer.sh/cka)
 - [Kubernetes the Hard Way by Kelsey Hightower](https://github.com/kelseyhightower/kubernetes-the-hard-way)
-- [Katacoda: Learn Kubernetes using Interactive Browser-Based Scenarios](https://www.katacoda.com/courses/kubernetes)
 
 # CKA Tips
 
-Some links that contain tips that might help you from different perspectives of the CKA exam. 
+Some links that contain tips that might help you from different perspectives of the CKA exam.
 
-- [Graham Moore - 7.5 tips to help you ace the Certified Kubernetes Administrator (CKA) exam](https://kubedex.com/7-5-tips-to-help-you-ace-the-certified-kubernetes-administrator-cka-exam/)
 - [How to pass the Certified Kubernetes Administrator (CKA) exam on the first attempt](https://medium.com/devopslinks/how-to-pass-certified-kubernetes-administrator-cka-exam-on-first-attempt-36c0ceb4c9e)
