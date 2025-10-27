@@ -305,4 +305,3 @@ Practice a lot with Kubernetes:
 Some links that contain tips that might help you from different perspectives of the CKA exam.
 
 - [How to pass the Certified Kubernetes Administrator (CKA) exam on the first attempt](https://medium.com/devopslinks/how-to-pass-certified-kubernetes-administrator-cka-exam-on-first-attempt-36c0ceb4c9e)
-ceb4c9e)
