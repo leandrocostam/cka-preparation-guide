@@ -1,10 +1,10 @@
 ![Check Kubernetes documentation links](https://github.com/leandrocostam/cka-preparation-guide/workflows/Check%20Kubernetes%20documentation%20links/badge.svg)
 
-# Certified Kubernetes Administrator (CKA) - V1.27
+# Certified Kubernetes Administrator (CKA) - V1.33
 
 The objective of this repository is help you for taking the Certified Kubernetes Administrator (CKA) exam using online resources, especially using resources from [Kubernetes Official Documentation](https://kubernetes.io).
 
-The references were selected for the [Exam Curriculum 1.27](https://github.com/cncf/curriculum/blob/acb43587b95a95dd9aeb9b0ca5be0ae0b6ac39ed/CKA_Curriculum_v1.27.pdf), and there are exclusive information for API objects and annotations. For more information, please see [CNCF Curriculum](https://github.com/cncf/curriculum/).
+The references were selected for the [Exam Curriculum 1.33](https://github.com/cncf/curriculum/blob/04aefac8f3d765e0a022b5c65bc55586a700e092/CKA_Curriculum_v1.33.pdf), and there are exclusive information for API objects and annotations. For more information, please see [CNCF Curriculum](https://github.com/cncf/curriculum/).
 
 Please, feel free to place a pull request whether something is not up-to-date, should be added or contains wrong information/reference.
 
@@ -18,7 +18,7 @@ The exam is kind of "put your hands on", where you have some problems to fix wit
 
 My tip: Spend your time wisely. Use the Notebook feature (provided in exam's UI) to keep track of your progress, where you might take notes of each question, put some annotations in order to help you. Additionally, don't get stuck, move to the next problem, and take it back when you finish all the other problems.
 
-Exam Cost: $395 and includes one free retake.
+Exam Cost: $445 and includes one free retake.
 
 It's important to mention that you have access to [Kubernetes Official Documentation](https://kubernetes.io) during the exam. So get yourself familiar with Kubernetes online documentation, and know where to find all specific topics listed below. It might be helpful for you during the exam.
 
@@ -307,3 +307,4 @@ Practice a lot with Kubernetes:
 Some links that contain tips that might help you from different perspectives of the CKA exam.
 
 - [How to pass the Certified Kubernetes Administrator (CKA) exam on the first attempt](https://medium.com/devopslinks/how-to-pass-certified-kubernetes-administrator-cka-exam-on-first-attempt-36c0ceb4c9e)
+ceb4c9e)
